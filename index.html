@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>С днем рождения! ❤️</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; /* Более современный шрифт */
+            display: flex;
+            flex-direction: column; /* Располагаем элементы в столбец */
+            align-items: center; /* Центрируем по горизонтали */
+            min-height: 100vh;
+            padding: 20px; /* Небольшой отступ для всего контента */
+            box-sizing: border-box; /* Чтобы padding не увеличивал общую ширину/высоту */
+        }
+
+        .main-header {
+            font-size: 2.5em; /* Размер заголовка */
+            font-weight: 300; /* Более легкий шрифт */
+            color: #333;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 40px; /* Отступ после заголовка */
+        }
+
+        .video-container {
+            width: 100%;
+            max-width: 800px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            margin-bottom: auto; /* Прижимает футер вниз, если контента мало */
+        }
+
+        video {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .footer-credits {
+            font-size: 0.8em; /* Маленький размер шрифта */
+            color: #555555;  /* Темно-серый цвет */
+            text-align: left;
+            width: 100%;     /* Занимает всю доступную ширину */
+            max-width: 800px; /* Совпадает с максимальной шириной видео для выравнивания */
+            padding-top: 20px; /* Отступ сверху */
+            margin-top: auto; /* Прижимает футер к низу, если основной контент не занимает всю высоту */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="video-container">
+        <video autoplay muted playsinline preload="auto" loop poster="images/video_poster.jpg">
+            <source src="videos/my_awesome_video.mp4" type="video/mp4">
+            Ваш браузер не поддерживает тег video. Пожалуйста, обновите его.
+        </video>
+    </div>
+
+    <footer class="footer-credits">
+        Design:Milana, 2025. Tech support: Anton.
+    </footer>
+
+    </body>
+</html>
